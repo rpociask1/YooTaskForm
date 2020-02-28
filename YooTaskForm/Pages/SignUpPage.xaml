@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="YooTaskForm.Pages.SignUpPage">
+    <ContentPage.Content>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <StackLayout Grid.Column="0" Margin="40" HorizontalOptions="Center">
+                <Image Source="yootasklogo.png" HeightRequest="100" WidthRequest="100"/>
+                <Label Text="Witaj w YooTask!" FontSize="Medium" TextColor="#707070"/>
+            </StackLayout>
+            <StackLayout Grid.Row="1" Margin="40,0,40,0" VerticalOptions="CenterAndExpand">
+                <Entry Placeholder="Email" PlaceholderColor="#707070" x:Name="EntEmail"/>
+                <Entry Placeholder="Hasło" PlaceholderColor="#707070" x:Name="EntPassword" IsPassword="True"/>
+                <Entry Placeholder="Potwierdź hasło" PlaceholderColor="#707070" x:Name="EntConfirmPassword" IsPassword="True"/>
+                <Button Text="Zarejestruj" BackgroundColor="#008cff" TextColor="White" CornerRadius="30" HeightRequest="40" x:Name="BtnSign" Clicked="BtnSign_Clicked"></Button>
+            </StackLayout>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

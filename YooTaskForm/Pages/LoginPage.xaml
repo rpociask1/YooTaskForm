@@ -21,11 +21,17 @@
                 <Entry Placeholder="Email" PlaceholderColor="#008cff" x:Name="EntEmail"/>
                 <Entry Placeholder="Password" PlaceholderColor="#008cff" x:Name="EntPassword" IsPassword="True"/>
                 <Label Text="Zapomniałeś hasła?" TextColor="#707070" HorizontalOptions="End"></Label>
-                <Button Text="Zaloguj" BackgroundColor="#0c10f0" TextColor="White" CornerRadius="30" HeightRequest="40" x:Name="BtnLogin" Clicked="BtnLogin_Clicked"></Button>
+                <Button Text="Zaloguj" BackgroundColor="#008cff" TextColor="White" CornerRadius="30" HeightRequest="40" x:Name="BtnLogin" Clicked="BtnLogin_Clicked"></Button>
             </StackLayout>
             <StackLayout Grid.Row="2" Padding="20" Orientation="Horizontal" HorizontalOptions="Center">
                 <Label Text="Nie masz konta?" TextColor="#59474B"></Label>
-                <Label Text="Założ je" TextColor="#28C8B8"></Label>
+                <Label Text="Zarejestruj się!" TextColor="#28C8B8">
+                    <Label.GestureRecognizers>
+                        <TapGestureRecognizer x:Name="TapSignUp" Tapped="TapSignUp_OnTapped"></TapGestureRecognizer>
+                    </Label.GestureRecognizers>
+                </Label>
+                
+                
             </StackLayout>
         </Grid>
     </ContentPage.Content>
