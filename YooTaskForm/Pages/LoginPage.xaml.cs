@@ -19,7 +19,7 @@ namespace YooTaskForm.Pages
 
         private void BtnLogin_Clicked(object sender, EventArgs e)
         {
-
+            //
         }
     }
 }
