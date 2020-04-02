@@ -6,7 +6,7 @@
              mc:Ignorable="d"
              x:Class="YooTaskForm.Pages.HomePage">
     <ContentPage.Content>
-        <ListView SeparatorVisibility="None" HasUnevenRows="True">
+        <ListView x:Name="LvProjects" ItemSelected="LvProjects_ItemSelected" SeparatorVisibility="None" HasUnevenRows="True">
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <ViewCell>

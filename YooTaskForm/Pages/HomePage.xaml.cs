@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using YooTaskForm.Models;
 
 namespace YooTaskForm.Pages
 {
@@ -15,6 +16,18 @@ namespace YooTaskForm.Pages
         public HomePage()
         {
             InitializeComponent();
+        }
+
+        protected override async void OnAppearing()
+        {
+            base.OnAppearing();
+
+        }
+        private void LvProjects_ItemSelected(object sender, SelectedItemChangedEventArgs e)
+        {
+            var selectedProject = e.SelectedItem as Project;
+          //  Navigation.PushAsync(new ProjectPage(selectedProject.Id));
+
         }
     }
 }
